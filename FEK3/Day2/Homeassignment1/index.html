@@ -43,17 +43,21 @@
         color: #ababab;
         font-weight: normal;
       }
-      button {
-        display: block;
+      
+      .container {
+        background-color: #ddd;
+        padding: 15px 20px;
+      }
+
+      .submit {
+        /* display: block; */
+        width: auto;
         background-color: #009999;
         color: #fff;
         padding: 15px 30px;
         margin: 20px 0;
         border: none;
-      }
-      .container {
-        background-color: #ddd;
-        padding: 15px 20px;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -67,6 +71,8 @@
         adipisicing elit. Ut eum excepturi voluptas officia tenetur molestias
         cum officiis assumenda quod dignissimos!
       </p>
+
+      <form action="#">
       <table>
         <!-- begin 1st tbody -->
         <tbody>
@@ -75,8 +81,8 @@
             <th><label for="lname">Last name</label></th>
           </tr>
           <tr>
-            <td><input type="text" name="fname" /></td>
-            <td><input type="text" name="lname" /></td>
+            <td><input type="text" name="fname" placeholder="John" /></td>
+            <td><input type="text" name="lname" placeholder="Smith" /></td>
           </tr>
         </tbody>
         <!-- end 1st tbody -->
@@ -96,7 +102,7 @@
                 placeholder="john@example.com"
               />
             </td>
-            <td><input type="text" name="address" /></td>
+            <td><input type="text" name="address" placeholder="Silk St" /></td>
           </tr>
         </tbody>
 
@@ -111,7 +117,7 @@
             </th>
           </tr>
           <tr>
-            <td><input type="text" name="city" /></td>
+            <td><input type="text" name="city" placeholder="London" /></td>
             <td><input type="text" name="state" /></td>
           </tr>
         </tbody>
@@ -125,7 +131,7 @@
             <th><label for="country">Country</label></th>
           </tr>
           <tr>
-            <td><input type="text" name="zipcode" /></td>
+            <td><input type="text" name="zipcode" placeholder="EC2Y8DS" /></td>
             <td>
               <select id="country" name="country" class="">
                 <option value="Afghanistan">Afghanistan</option>
@@ -415,7 +421,9 @@
                 <option value="United Arab Emirates">
                   United Arab Emirates
                 </option>
-                <option value="United Kingdom">United Kingdom</option>
+                <option value="United Kingdom" selected="selected">
+                  United Kingdom
+                </option>
                 <option value="United States">United States</option>
                 <option value="United States Minor Outlying Islands">
                   United States Minor Outlying Islands
@@ -444,8 +452,7 @@
         <!-- end 4th tbody -->
       </table>
 
-      <form action="#">
-        <button>SEND ME FREE COFFE</button>
+        <input class="submit" type="submit" value="SEND ME FREE COFFE"></input>
       </form>
     </div>
   </body>
