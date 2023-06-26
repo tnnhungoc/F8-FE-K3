@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>login <form action=""></form></title>
+  </head>
+  <body>
+    <head> </head>
+    <main>
+      <section>
+        <form action="" method="post">
+          <!-- username -->
+          <div class="container">
+            <div class="form-label">
+              <label for="name">Username:</label>
+            </div>
+            <div class="form-element">
+              <input type="text" name="name" id="name" />
+            </div>
+          </div>
+          <!-- </div> -->
+
+          <!-- password -->
+          <div class="container">
+            <div class="form-label">
+              <label for="password">Password:</label>
+            </div>
+            <div class="form-element">
+              <input type="password" name="password" id="password" />
+            </div>
+          </div>
+
+          <!-- city -->
+          <div class="container">
+            <div class="form-label">
+              <label for="city">City of <br />Employment:</label>
+            </div>
+            <div class="form-element">
+              <input type="text" name="city" id="city" />
+            </div>
+          </div>
+
+          <!-- web server -->
+          <div class="container">
+            <div class="form-label">
+              <label for="webserver">Web server:</label>
+            </div>
+            <div class="form-element">
+              <select name="webserver" id="webserver">
+                <option value="">-Choose a sever-</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- radio options -->
+          <div class="container">
+            <div class="form-label">
+              <label for="jobs">Please specity your role:</label>
+            </div>
+            <div class="form-element">
+              <input type="radio" name="jobs" id="admin" value="Admin" />
+              <label for="admin">Admin</label>
+              <br />
+              <input type="radio" name="jobs" id="engineer" value="Engineer" />
+              <label for="engineer">Engineer</label>
+              <br />
+              <input type="radio" name="jobs" id="manager" value="Manager" />
+              <label for="manger">Manager</label>
+              <br />
+              <input type="radio" name="jobs" id="guest" value="Guest" />
+              <label for="guest">Guest</label>
+            </div>
+          </div>
+          <!-- checkbox -->
+          <div class="container">
+            <div class="form-label">
+              <label for="sign-on-routes"
+                >Single Sign-on <br />
+                the following</label
+              >
+            </div>
+            <div class="form-element">
+              <input type="checkbox" name="sign-on-routes" value="0" />
+              <label for="mail">Mail</label>
+              <br />
+              <input type="checkbox" name="sign-on-routes" value="1" />
+              <label for="payroll">Payroll</label>
+              <br />
+              <input type="checkbox" name="sign-on-routes" value="2" />
+              <label for="sefl-service">Self-service</label>
+            </div>
+          </div>
+          <!-- button -->
+          <div class="button">
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

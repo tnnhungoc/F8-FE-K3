@@ -1,0 +1,32 @@
+section {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+h2 {
+  text-align: center;
+}
+.decor-line {
+  width: 50px;
+  border-top: 4px solid #6893f0e8;
+  position: relative;
+
+  left: 48%;
+}
+.flex-container {
+  display: flex;
+  margin-top: 40px;
+}
+.flex-opinions {
+  display: flex;
+
+  margin-right: 50px;
+}
+
+.user {
+  padding: 10px 20px;
+}
+.user-opinion > span {
+  font-weight: bold;
+}

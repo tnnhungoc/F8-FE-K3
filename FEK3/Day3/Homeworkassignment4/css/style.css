@@ -1,0 +1,50 @@
+main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.location {
+  margin: 40px 0;
+  font-size: 0px;
+  box-sizing: border-box;
+}
+.location > a {
+  font-size: 16px;
+  display: inline-block;
+  padding: 5px 10px 5px 5px;
+  text-decoration: none;
+  color: #f49c4a;
+  text-align: center;
+  border-top: 1px solid #f49c4a;
+  border-bottom: 1px solid #f49c4a;
+}
+
+.location > a:first-of-type {
+  border-top: 1px solid #f49c4a;
+  border-bottom: 1px solid #f49c4a;
+  border-left: 1px solid #f49c4a;
+  background-color: #f49c4a;
+  color: #fff;
+}
+.location > a:last-of-type {
+  border-top: 1px solid #f49c4a;
+  border-bottom: 1px solid #f49c4a;
+  border-right: 1px solid #f49c4a;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container-addr {
+  width: 30%;
+  background-color: #f3f3f3;
+}
+.flex-container-addr > div {
+  margin: 40px 50px 30px 20px;
+}
+
+.flex-container .flex-container-map {
+  width: 70%;
+}
