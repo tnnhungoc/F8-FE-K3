@@ -1,0 +1,35 @@
+footer {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.sub-box {
+  background: #4f6778;
+  padding: 10px 30px 30px 30px;
+}
+.sub-box span {
+  color: rgb(212, 132, 11);
+}
+.sub-box h2,
+p {
+  color: #fff;
+}
+
+.email {
+  padding: 5px 10px;
+}
+.btn {
+  background: rgb(231, 200, 25);
+  padding: 6px 20px;
+  border: hidden;
+}
+
+article:hover .email::placeholder {
+  background-color: #ddd;
+  color: rgb(212, 132, 11);
+}
+
+article:hover .btn {
+  background-color: rgb(212, 132, 11);
+  color: #fff;
+}

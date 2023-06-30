@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Alfaslabone";
+  src: url("../fonts/AlfaSlabOne-Regular.ttf") format("truetype");
+}
+
+main {
+  width: 90%;
+  margin: 50px auto;
+}
+
+section > h2 {
+  text-align: center;
+  font-family: BebasNeue;
+  color: rgb(82, 42, 42);
+}
+
+section > h3 {
+  color: rgb(82, 42, 42);
+  text-align: center;
+  font-family: Alfaslabone;
+  font-size: 3rem;
+  margin: 15px;
+}
+
+.flex-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-form div {
+  flex: 40%;
+  margin: 5px;
+  padding: 5px;
+}
+
+.flex-form div input {
+  display: block;
+  width: 100%;
+  font-size: x-large;
+  font-family: BebasNeue;
+  border: 1px solid #cdcdcd;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+.flex-form .btn {
+  padding: 22px 30px;
+  text-align: center;
+  background: rgb(169, 52, 52);
+  color: #fff;
+  font-size: 1rem;
+  font-family: Alfaslabone;
+  border-radius: 5px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Booking form</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <h2>RESERVATION</h2>
+        <h3>Book your table</h3>
+        <!-- first flex-form -->
+        <div class="flex-form">
+          <div>
+            <label for="name"></label>
+            <input type="text" name="name" placeholder="NAME" />
+          </div>
+          <div>
+            <label for="email"></label>
+            <input type="email" name="email" placeholder="EMAIL" />
+          </div>
+        </div>
+
+        <!-- second flex-form -->
+        <div class="flex-form">
+          <div>
+            <label for="date"></label>
+            <input
+              type="text"
+              name="date"
+              placeholder="DATE"
+              onfocus="(this.type='date')"
+            />
+          </div>
+          <div>
+            <label for="time"></label>
+            <input
+              type="text"
+              name="time"
+              placeholder="TIME"
+              onfocus="(this.type='time')"
+            />
+          </div>
+        </div>
+
+        <!-- third flex-form -->
+        <div class="flex-form">
+          <div>
+            <label for="people"></label>
+            <input type="text" name="people" placeholder="PEOPLE" />
+          </div>
+          <div>
+            <label for="submit"></label>
+            <input
+              type="submit"
+              class="btn"
+              name="submit"
+              value="Find A Table"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
