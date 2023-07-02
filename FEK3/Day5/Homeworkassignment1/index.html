@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/solid.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/solid.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="main-wrap">
+        <section class="contact-form">
+          <h2 class="form-header">Hey there</h2>
+          <p class="form-subheader">
+            <span>We'd like to hear from you.</span> Send us your message or
+            just say hi with our contact form or directly via phone, we love to
+            chat.
+          </p>
+
+          <!-- name field -->
+
+          <form action="" method="post" class="form-wrap">
+            <div class="form">
+              <label for="name" class="input-label"
+                ><i class="left-icon fa-solid fa-user"></i>
+              </label>
+              <input
+                type="text"
+                class="input-field"
+                name="name"
+                placeholder="Your name"
+              />
+              <span class="tooltip-text">Enter your name</span>
+              <div class="right-icon">
+                <i class="right-icon-star fa-sharp fa-solid fa-star"></i>
+                <i class="right-icon-x fa-sharp fa-solid fa-xmark"></i>
+              </div>
+            </div>
+
+            <!-- email field -->
+            <div class="form">
+              <label for="email" class="input-label"
+                ><i class="left-icon fa-solid fa-envelope"></i>
+              </label>
+              <input
+                type="email"
+                class="input-field"
+                name="email"
+                placeholder="your@domain.com"
+              />
+              <span class="tooltip-text">Enter your name</span>
+              <div class="right-icon">
+                <i class="right-icon-star fa-sharp fa-solid fa-star"></i>
+                <i class="right-icon-x fa-sharp fa-solid fa-xmark"></i>
+              </div>
+            </div>
+
+            <!-- phone field -->
+
+            <div class="form">
+              <label for="phone" class="input-label"
+                ><i class="left-icon fa-solid fa-mobile-screen-button"></i>
+              </label>
+              <input
+                type="tel"
+                class="input-field"
+                name="phone"
+                placeholder="+44 00 123"
+              />
+              <span class="tooltip-text">Enter your name</span>
+            </div>
+
+            <!-- subject field -->
+            <div class="form">
+              <label for="subject" class="input-label"
+                ><i class="left-icon fa-solid fa-book"></i>
+              </label>
+              <select class="input-field" name="subject" id="subject">
+                <option value="Subject">Subject</option>
+                <option value="SBC">ABC</option>
+              </select>
+
+              <span class="tooltip-text">Enter your name</span>
+
+              <div class="right-icon">
+                <div class="arrows">
+                  <div>&#x25B2;</div>
+                  <div>&#x25BC;</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- message field -->
+            <div class="form text-area">
+              <label for="message" class="input-label"
+                ><i class="left-icon text-icon fa-solid fa-message"></i>
+              </label>
+              <textarea
+                class="input-field input-padding-top"
+                name="message"
+                id="message"
+                cols="30"
+                rows="20"
+                placeholder="Message"
+              ></textarea>
+              <span class="tooltip-text">Enter your name</span>
+              <div class="right-icon">
+                <i class="right-icon-star fa-sharp fa-solid fa-star"></i>
+                <i class="right-icon-x fa-sharp fa-solid fa-xmark"></i>
+              </div>
+            </div>
+
+            <div class="contact-form-footer">
+              <label class="agreement" for="checkbox">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="checkbox"
+                  checked
+                />
+
+                Send me a copy of this message</label
+              >
+              <button class="btn">SEND</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

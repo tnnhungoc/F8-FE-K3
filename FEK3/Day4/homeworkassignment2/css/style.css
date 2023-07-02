@@ -12,18 +12,18 @@ main {
   margin: 50px auto;
 }
 
-section > h2 {
+section > h3 {
   text-align: center;
   font-family: BebasNeue;
   color: rgb(82, 42, 42);
 }
 
-section > h3 {
+section > h2 {
   color: rgb(82, 42, 42);
   text-align: center;
   font-family: Alfaslabone;
   font-size: 3rem;
-  margin: 15px;
+  /* margin: 10px; */
 }
 
 .flex-form {
@@ -33,7 +33,7 @@ section > h3 {
 
 .flex-form div {
   flex: 40%;
-  margin: 5px;
+  margin: 10px;
   padding: 5px;
 }
 
@@ -43,12 +43,12 @@ section > h3 {
   font-size: x-large;
   font-family: BebasNeue;
   border: 1px solid #cdcdcd;
-  padding: 20px 30px;
+  padding: 10px 20px;
   box-sizing: border-box;
 }
 
 .flex-form .btn {
-  padding: 22px 30px;
+  padding: 15px 20px;
   text-align: center;
   background: rgb(169, 52, 52);
   color: #fff;

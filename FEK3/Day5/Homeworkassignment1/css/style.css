@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Lobster";
+  src: url("../fonts/Lobster-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "Lato";
+}
+
+.main-wrap {
+  width: 90%;
+  margin: 50px auto;
+}
+.contact-form .form-header {
+  font-family: "Lobster";
+  font-size: 3rem;
+  margin: 30px 0;
+}
+.form-subheader > span {
+  color: red;
+}
+
+.form-subheader {
+  color: #9f9f9f;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.form-wrap {
+  width: 70%;
+}
+
+.form {
+  height: 50px;
+  margin: 30px 0;
+  border: 1.5px solid #9f9f9f;
+  display: flex;
+  background-color: #9f9f9f;
+  position: relative;
+}
+
+.form .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  top: -60px;
+  background-color: rgb(67, 67, 67);
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px 15px;
+  margin-left: 25px;
+}
+
+.tooltip-text::after {
+  visibility: hidden;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 32px;
+  left: 20px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid rgb(67, 67, 67);
+}
+
+.form .input-label {
+  margin: auto 0;
+  width: 50px;
+  text-align: center;
+}
+.form .left-icon {
+  width: auto;
+  height: 100%;
+  color: #eaeaea;
+}
+
+.form .input-field {
+  width: 100%;
+  border: none;
+  padding-left: 20px;
+}
+
+#subject {
+  appearance: none;
+}
+
+.form .right-icon {
+  float: right;
+  background-color: #fff;
+  color: #9f9f9f;
+}
+
+.form .right-icon-star {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 0.8rem;
+}
+.form .right-icon-x {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 1rem;
+  display: none;
+}
+
+.right-icon .arrows {
+  font-size: 0.7rem;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.form-wrap .text-area {
+  position: relative;
+  height: auto;
+  /* padding-top: 20px; */
+}
+
+.text-area .text-icon {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+
+.text-area .input-padding-top {
+  padding-top: 20px;
+  font-family: "Lato";
+}
+
+/* contact-form-footer */
+.contact-form-footer {
+  position: relative;
+}
+.contact-form-footer input[type="checkbox"] {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #9f9f9f;
+  background-clip: content-box;
+  vertical-align: middle;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.agreement > input[type="checkbox"]:checked:before {
+  content: "✔";
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  font-size: 16px;
+}
+
+.contact-form-footer .agreement {
+  display: inline-block;
+  font-family: "Lato";
+  color: #9f9f9f;
+}
+.contact-form-footer .btn {
+  float: right;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: rgb(194, 34, 9);
+  border: none;
+  font-family: "Lato";
+}
+
+/* hover on fields*/
+.form:hover {
+  background-color: #000;
+  border: 1.5px solid #333;
+}
+
+/* focus on fields */
+.input-field:focus-visible {
+  outline: none;
+}
+
+.input-field:focus + .tooltip-text,
+.input-field:focus + .tooltip-text::after {
+  visibility: visible;
+}
+
+.input-field:focus ~ .right-icon > .right-icon-star {
+  display: none;
+}
+
+.input-field:focus ~ .right-icon > .right-icon-x {
+  display: block;
+}

@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
 footer {
   width: 90%;
   margin: 50px auto;
@@ -13,23 +23,36 @@ footer {
 .sub-box h2,
 p {
   color: #fff;
+  margin: 10px 0;
 }
 
 .email {
   padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
 }
+
+.email > input {
+  display: inline-block;
+  width: 169px;
+}
+
 .btn {
   background: rgb(231, 200, 25);
-  padding: 6px 20px;
+  padding: 5px 20px;
+  border-radius: 3px;
+  box-sizing: border-box;
   border: hidden;
 }
 
-article:hover .email::placeholder {
+.sub-box:hover input {
   background-color: #ddd;
+}
+.sub-box:hover .email::placeholder {
   color: rgb(212, 132, 11);
 }
 
-article:hover .btn {
+.sub-box:hover .btn {
   background-color: rgb(212, 132, 11);
   color: #fff;
 }

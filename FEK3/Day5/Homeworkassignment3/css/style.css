@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.section-wrap {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.section-wrap .section-header {
+  text-align: center;
+}
+.section-header p {
+  margin: 15px 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+.cta-card-wrap {
+  flex-basis: 32%;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.cta-card {
+  margin: 40px;
+  text-align: center;
+}
+.cta-card .icon {
+  font-size: 3rem;
+  color: rgb(223, 149, 0);
+  padding: 30px;
+  border: 1px solid rgb(223, 149, 0);
+  border-radius: 100%;
+}
+
+.cta-card .card-title {
+  margin: 20px;
+}
+.cta-card .card-descr {
+  color: #878787;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+.cta-card .card-btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+  color: #fff;
+  background-color: rgb(223, 149, 0);
+  border: none;
+}
