@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+body {
+  font-family: "Roboto";
+}
+.main-wrap {
+  width: 100%;
+  min-height: 1200px;
+  background-color: #ebf5fe;
+}
+
+.main-wrap .cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 90%;
+  margin: 0 auto;
+  row-gap: 20px;
+  column-gap: 30px;
+  justify-content: center;
+  padding: 50px;
+}
+
+.cards .cta-card-wrap {
+  flex-basis: 30%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.cards .cta-card-wrap {
+  background-color: #fff;
+  overflow: hidden;
+}
+.cta-card-wrap .cta-card {
+  margin: 20px;
+}
+
+.cta-card .card-heading i {
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+
+  padding-top: 15px;
+  background: linear-gradient(
+    to right,
+    rgba(224, 42, 115, 0.699),
+    rgb(224, 90, 90),
+    rgb(206, 69, 19)
+  );
+  color: #fff;
+  border: 1px solid rgb(217, 65, 0);
+  border-radius: 50%;
+}
+.cta-card .card-heading .heading-title {
+  font-family: "Roboto";
+}
+
+.clearfix {
+  clear: both;
+}
+
+.cta-card .card-content {
+  margin: 15px 0;
+  color: #666666;
+
+  word-wrap: break-word;
+  font-weight: 200;
+  line-height: 1.5;
+}
+
+.cta-card .learnmore {
+  display: inline-block;
+  color: rgb(0, 54, 231);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+/* hover show card's border */
+.cta-card-wrap:hover {
+  border: 1px solid rgb(197, 43, 0);
+}

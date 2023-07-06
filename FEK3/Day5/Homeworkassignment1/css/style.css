@@ -16,11 +16,12 @@ body {
 }
 
 .main-wrap {
-  width: 90%;
+  max-width: 90%;
   margin: 50px auto;
 }
 .contact-form .form-header {
   font-family: "Lobster";
+  font-weight: 500;
   font-size: 3rem;
   margin: 30px 0;
 }
@@ -36,7 +37,7 @@ body {
 }
 
 .form-wrap {
-  width: 70%;
+  max-width: 70%;
 }
 
 .form {
@@ -80,7 +81,7 @@ body {
   text-align: center;
 }
 .form .left-icon {
-  width: auto;
+  max-width: auto;
   height: 100%;
   color: #eaeaea;
 }
@@ -198,4 +199,9 @@ body {
 
 .input-field:focus ~ .right-icon > .right-icon-x {
   display: block;
+}
+
+.form:focus-within {
+  background-color: #000;
+  border: 1.5px solid #333;
 }
