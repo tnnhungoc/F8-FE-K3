@@ -31,10 +31,15 @@
 
 .menu > li > a {
   display: block;
-  margin: 3px;
+  /* margin: 3px; */
   padding: 12px 17px;
   color: #666;
   text-decoration: none;
+}
+
+.menu > li:hover {
+  border-right: 1px solid rgb(220, 220, 220);
+  margin-right: -0.5px;
 }
 
 .menu i {
@@ -57,7 +62,7 @@
 }
 
 .dropdown-content > li {
-  /* border: 1px solid gray; */
+  border: 1px solid gray;
 }
 
 .dropdown-content > li > a {
@@ -85,6 +90,7 @@
 .heading .menu a:hover {
   background-color: #2da5da;
   color: #fff;
+  border: 2px solid white;
 }
 .menu #menu-about:hover ~ #sub-menu-about,
 .menu #menu-news:hover ~ #sub-menu-news,
