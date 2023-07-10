@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 @font-face {
   font-family: "OpenSans";
@@ -31,15 +32,14 @@
 
 .menu > li > a {
   display: block;
-  /* margin: 3px; */
+
   padding: 12px 17px;
   color: #666;
   text-decoration: none;
 }
 
 .menu > li:hover {
-  border-right: 1px solid rgb(220, 220, 220);
-  margin-right: -0.5px;
+  height: auto;
 }
 
 .menu i {
@@ -51,10 +51,12 @@
   float: right;
 }
 
-.menu .dropdown .dropdown-content {
+.menu .dropdown .sub-menu {
   display: none;
-  position: absolute;
-  top: 85px;
+  padding-top: 15px;
+}
+
+.menu .dropdown .dropdown-content {
   list-style: none;
   min-width: 200px;
   box-shadow: 0 1px 8px rgb(0 0 0 / 0.3);
@@ -62,15 +64,15 @@
 }
 
 .dropdown-content > li {
-  border: 1px solid gray;
+  border: 1px solid rgb(220, 220, 220);
 }
 
 .dropdown-content > li > a {
   display: block;
-  padding: 15px 20px;
+  padding: 10px 15px;
   color: #666;
   text-decoration: none;
-  border-bottom: 1px solid rgb(220, 220, 220);
+  border: 2px solid transparent;
 }
 
 .dropdown-content-i {
@@ -80,7 +82,7 @@
 .dropdown-content::after {
   content: "";
   position: absolute;
-  top: -10px;
+  top: 5px;
   left: 30px;
   border-width: 6px;
   border-style: solid;
@@ -91,9 +93,15 @@
   background-color: #2da5da;
   color: #fff;
   border: 2px solid white;
+  padding: 10px 15px;
 }
 .menu #menu-about:hover ~ #sub-menu-about,
 .menu #menu-news:hover ~ #sub-menu-news,
-.menu #menu-portfolio:hover ~ #sub-menu-portfolio {
+.menu #menu-portfolio:hover ~ #sub-menu-portfolio,
+#sub-menu-about:hover,
+#sub-menu-news:hover,
+#sub-menu-portfolio:hover {
   display: block;
+  position: absolute;
+  top: 70px;
 }
