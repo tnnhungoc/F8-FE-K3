@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+@font-face {
+  font-family: "Roboto-m";
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto-l";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+body {
+  font-family: "Roboto-l";
+}
+
+p {
+  font-size: 0.85rem;
+}
+
+.heading,
+.sub-heading,
+.card-title,
+.card-btn {
+  text-transform: capitalize;
+}
+
+.section-wrap {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.section-wrap .section-header {
+  text-align: center;
+}
+.section-wrap .section-header .heading {
+  font-size: 2rem;
+  font-family: "Roboto-m";
+  margin: 15px 0;
+}
+
+/* cards */
+/* .cards {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+} */
+
+.cards {
+  margin: 50px 0 60px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards .cta-card {
+  width: 30rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cta-card .card-header .card-title {
+  margin: 15px 0;
+}
+.cta-card .card-content {
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+.cta-card .card-btn {
+  margin: 15px 0;
+  padding: 10px 25px;
+  background: #29377d;
+  color: #fff;
+  border: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
