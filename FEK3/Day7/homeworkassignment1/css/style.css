@@ -12,6 +12,10 @@
   font-family: "SFU";
   src: url(../fonts/SFU/SFUHelveticaRegular.TTF);
 }
+@font-face {
+  font-family: "SFU-t";
+  src: url(../fonts/SFU/SFUTradeGothic-BoldCondensedTwenty.woff2);
+}
 
 .banner-wrap {
   width: 100%;
@@ -44,6 +48,8 @@
   color: #3f3424;
   line-height: 1.3;
   word-wrap: break-word;
+  font-family: "Asap";
+  margin: 5px 0;
   /* margin-bottom: 8px; */
 }
 
@@ -54,7 +60,7 @@
 }
 
 .banner .price {
-  font-family: "SFU";
+  font-family: "SFU-t";
   font-size: 1.3rem;
   background-color: #bf4240;
   color: #fff;
