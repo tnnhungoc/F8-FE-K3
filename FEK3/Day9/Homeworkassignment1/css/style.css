@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+@font-face {
+  font-family: "Spacegrotesk";
+  src: url(../fonts/spacegrotesk/SpaceGrotesk-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/inter/Inter-Regular.ttf);
+}
+
+.section-wrap {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.section-wrap .section-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-container .left-wrap {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-wrap .left-section {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.left-section .content {
+  max-width: 49%;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.left-section .content h2 {
+  font-family: "Spacegrotesk";
+}
+
+.left-section .content p {
+  font-family: "Inter";
+  line-height: 1.5;
+  margin: 15px 0;
+  color: #5a5a5a;
+}
+
+/* timeline */
+.left-section .timeline {
+  width: 2%;
+  min-height: 100px;
+  border-left: 1px solid #787878;
+  position: relative;
+  top: 5px;
+}
+
+.left-section .last-timeline {
+  width: 2%;
+  min-height: 0;
+  border-left: none;
+  position: relative;
+  top: 5px;
+}
+
+.left-section .timeline::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(36, 177, 187);
+  border: 5px solid rgb(228, 245, 252);
+  position: absolute;
+  top: 0;
+  left: -10px;
+  z-index: 1;
+}
+
+.left-section .content .btn {
+  display: inline-block;
+  margin-bottom: 50px;
+  padding: 5px 15px;
+  font-family: "Spacegrotesk";
+  font-weight: 600;
+  border-radius: 99px;
+  color: #787878;
+  border: none;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.left-section .years {
+  max-width: 49%;
+  margin-top: 5px;
+  padding-left: 30px;
+}
+
+.left-section .years a {
+  font-family: "Inter";
+  text-decoration: none;
+  color: #787878;
+}
+
+/* right-section */
+.right-section {
+  height: 500px;
+  position: relative;
+}
+.right-section span:nth-child(2) {
+  position: absolute;
+  top: 43%;
+  left: -35%;
+}
+
+/* hover */
+.left-section:hover {
+  flex-direction: row-reverse;
+}
+.left-section:hover .content {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.left-section:hover .years {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.left-section:hover .btn {
+  background: rgb(147, 78, 78);
+  color: #fff;
+}

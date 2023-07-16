@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-wrap {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.section-wrap .sec-header {
+  text-align: center;
+}
+.section-wrap .sec-header h2 {
+  font-size: 2rem;
+}
+.section-wrap .sec-header p {
+  margin: 20px 0 60px 0;
+  color: #707070;
+}
+
+.form-wrap .flex-form {
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-form .input-field {
+  width: 48%;
+  position: relative;
+}
+
+.form-wrap .flex-form input,
+select {
+  width: 100%;
+  display: block;
+  outline: none;
+  border: 1px solid transparent;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 2px rgb(241, 241, 241);
+  transition: all 0.2s ease-in-out;
+  font-size: 1.1rem;
+}
+
+.form-wrap .flex-form label {
+  position: absolute;
+  color: #848484;
+  top: 50%;
+  left: 4%;
+  transform: translateY(-50%);
+  cursor: text;
+  pointer-events: none; /*unclickable*/
+  transition: all 0.15s ease-in-out;
+}
+
+.flex-form select {
+  color: #848484;
+  height: 50px;
+  padding-top: 0;
+}
+
+.form-wrap .message {
+  position: relative;
+}
+
+.form-wrap .message textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 20px 15px;
+  box-shadow: 0px 0px 0px 2px rgb(241, 241, 241);
+  border: none;
+  font-size: 1.1rem;
+}
+
+.form-wrap .message label {
+  position: absolute;
+  color: #848484;
+  top: 10%;
+  left: 1.5%;
+  cursor: text;
+  pointer-events: none; /*unclickable*/
+  transition: all 0.15s ease-in-out;
+}
+
+.sec-footer {
+  text-align: center;
+  margin: 30px 0;
+}
+.sec-footer button {
+  padding: 20px 30px;
+  background-color: rgb(47, 72, 184);
+  color: #fff;
+  border: none;
+  border-radius: 99px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* focus */
+
+.input-field input:focus + label {
+  font-size: 14px;
+  top: 10px;
+}
+
+.input-field input:valid + label {
+  position: absolute;
+  font-size: 14px;
+  top: 10px;
+}
+
+.message textarea:focus + label {
+  font-size: 14px;
+  top: 5px;
+}
+
+.message textarea:valid + label {
+  position: absolute;
+  font-size: 14px;
+  top: 5px;
+}

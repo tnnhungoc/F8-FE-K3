@@ -43,27 +43,17 @@ p {
 }
 
 /* cards */
-/* .cards {
-  margin: 50px 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 1.5rem;
-} */
 
 .cards {
   margin: 50px 0 60px 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .cards .cta-card {
-  width: 30rem;
+  max-width: 20rem;
   text-align: center;
   display: flex;
   flex-direction: column;
