@@ -57,7 +57,7 @@ select {
   position: absolute;
   color: #848484;
   top: 50%;
-  left: 4%;
+  left: 15px;
   transform: translateY(-50%);
   cursor: text;
   pointer-events: none; /*unclickable*/
@@ -79,7 +79,7 @@ select {
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  padding: 20px 15px;
+  padding: 23px 15px;
   box-shadow: 0px 0px 0px 2px rgb(241, 241, 241);
   border: none;
   font-size: 1.1rem;
@@ -89,7 +89,7 @@ select {
   position: absolute;
   color: #848484;
   top: 10%;
-  left: 1.5%;
+  left: 15px;
   cursor: text;
   pointer-events: none; /*unclickable*/
   transition: all 0.15s ease-in-out;

@@ -5,6 +5,10 @@
   outline: 0;
 }
 
+@font-face {
+  font-family: "Spacegrotesk";
+  src: url(../spacegrotesk/SpaceGrotesk-Regular.ttf);
+}
 body {
   font-family: sans-serif;
 }
@@ -40,15 +44,16 @@ body {
   position: relative;
 }
 .card-middle .card-content > i {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: rgba(168, 82, 82, 0.797);
   animation: icon-out 0.4s ease-in-out;
 }
 
 .card-middle .card-content h2 {
+  font-family: "Spacegrotesk";
   margin: 20px 0 10px 0;
   position: absolute;
-  top: 18%;
+  top: 20%;
   animation: moveh2-out 0.4s ease-in-out;
 }
 
@@ -56,7 +61,7 @@ body {
   line-height: 1.5;
   color: #333;
   position: absolute;
-  top: 65%;
+  top: 70%;
   animation: movep-out 0.4s ease-in-out;
 }
 .card-content span {
@@ -100,7 +105,7 @@ body {
 
 @keyframes moveh2-in {
   from {
-    top: 18%;
+    top: 20%;
   }
 
   to {
@@ -114,7 +119,7 @@ body {
   }
 
   to {
-    top: 18%;
+    top: 20%;
   }
 }
 
@@ -123,21 +128,21 @@ body {
 }
 @keyframes movep-in {
   from {
-    top: 65%;
+    top: 70%;
   }
 
   to {
-    top: 45%;
+    top: 40%;
   }
 }
 
 @keyframes movep-out {
   from {
-    top: 45%;
+    top: 40%;
   }
 
   to {
-    top: 65%;
+    top: 70%;
   }
 }
 
