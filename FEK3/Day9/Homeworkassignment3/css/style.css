@@ -64,6 +64,16 @@ select {
   transition: all 0.15s ease-in-out;
 }
 
+/* set placeholder for email input */
+::placeholder {
+  color: transparent;
+}
+
+/* set fake label type:text for email input */
+.flex-form .noshow-label {
+  display: none;
+}
+
 .flex-form select {
   color: #848484;
   height: 50px;
@@ -110,12 +120,38 @@ select {
 }
 
 /* focus */
+.input-field input:focus,
+.message textarea:focus {
+  border: 1px solid #c5d4ff;
+  box-shadow: none;
+}
 
 .input-field input:focus + label {
   font-size: 14px;
   top: 10px;
 }
 
+.input-field input:valid {
+  background-color: #e5ecff;
+  box-shadow: none;
+}
+
+/* email input setting */
+#email:not(:placeholder-shown) {
+  background-color: #e5ecff;
+  box-shadow: none;
+}
+
+#email:not(:placeholder-shown) + .email {
+  display: none;
+}
+#email:not(:placeholder-shown) ~ .noshow-label {
+  display: block;
+  font-size: 14px;
+  top: 10px;
+}
+
+/* email-end */
 .input-field input:valid + label {
   position: absolute;
   font-size: 14px;
@@ -126,7 +162,10 @@ select {
   font-size: 14px;
   top: 5px;
 }
-
+.message textarea:valid {
+  background-color: #e5ecff;
+  box-shadow: none;
+}
 .message textarea:valid + label {
   position: absolute;
   font-size: 14px;

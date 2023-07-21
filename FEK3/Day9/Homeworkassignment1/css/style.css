@@ -116,15 +116,48 @@
   position: relative;
 }
 .right-section span:nth-child(2) {
+  width: 200px;
+  height: 300px;
+  background-image: url(../images/dew200x300.jpg);
   position: absolute;
   top: 43%;
   left: -35%;
+  background-size: cover;
+}
+
+.right-section > div {
+  display: block;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  width: 175px;
+  height: 280px;
+  position: absolute;
+  top: 45%;
+  left: -31%;
+  background-color: rgb(36, 115, 234);
+}
+
+.right-section > div h3 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(../images/dew200x300.jpg);
+  position: absolute;
+  top: 190px;
+  left: 20px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 
 /* hover */
 .left-section:hover {
   flex-direction: row-reverse;
 }
+
+.left-section:hover .content {
+}
+
 .left-section:hover .content {
   text-align: left;
   padding-left: 30px;
