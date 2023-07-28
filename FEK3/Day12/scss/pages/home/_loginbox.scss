@@ -1,0 +1,146 @@
+.position {
+  position: relative;
+}
+.form {
+  width: 484px;
+  // margin-top: 5%;
+  margin-left: 20%;
+  font-family: "Rajdhani-bold";
+  .login-box {
+    position: absolute;
+    top: 50px;
+    left: 80%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    @include formBoxBase;
+    .login-inner {
+      @include formInner;
+      position: relative;
+      .rocket {
+        position: absolute;
+        top: -68px;
+        left: -80px;
+      }
+      h2 {
+        font-size: 2rem;
+        font-weight: 900;
+      }
+      .login-form {
+        margin: 76px 0 0 0;
+        .input-field {
+          @include inputField;
+        }
+        .options {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: baseline;
+          font-size: 0.88rem;
+          .rememberme {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            input:checked ~ .checkbox .cross-img {
+              background-color: $blueBtn;
+            }
+            label {
+              color: $gray;
+              cursor: pointer;
+              .cross-img {
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                line-height: 14px;
+                margin-right: 10px;
+                padding: 3px;
+                border: 1px solid #dedeea;
+                border-radius: 6px;
+                background-color: #fff;
+              }
+            }
+          }
+
+          a {
+            color: #adafca;
+            &:hover {
+              color: $blueBtn;
+            }
+          }
+        }
+        .form-btn {
+          button {
+            @include formBtn;
+            background-color: $purpleBtn;
+            &:hover {
+              background-color: $purpleBtnHover;
+            }
+          }
+        }
+        .sns-login {
+          margin-top: 40px;
+          color: $gray;
+          font-size: 0.9rem;
+          width: 100%;
+          > p {
+            display: inline-block;
+            width: auto;
+            &::before {
+              content: "";
+              position: relative;
+              top: 8px;
+              left: -88px;
+              display: block;
+              width: 75px;
+              height: 1px;
+              background-color: #eaeaf5;
+            }
+            &::after {
+              content: "";
+              position: relative;
+              top: -8px;
+              right: -190px;
+              display: block;
+              width: 75px;
+              height: 1px;
+              background-color: #eaeaf5;
+            }
+          }
+          .sns {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            .sns-item {
+              @include snsItem;
+            }
+            .facebook {
+              background-color: #3763d2;
+            }
+            .twitter {
+              background-color: #23d2e2;
+            }
+            .twitch {
+              background-color: #7b5dfa;
+            }
+            .youtube {
+              background-color: #fd434f;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-wrap {
+  @include formWrap;
+}
+
+.float-input:not(:placeholder-shown) + .float-label {
+  position: absolute !important;
+  top: 0px !important;
+  font-size: 13px;
+}

@@ -1,0 +1,110 @@
+.form {
+  width: 484px;
+  margin-top: 5%;
+  margin-left: 20%;
+  font-family: "Rajdhani-bold";
+  .register-box {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    @include formBoxBase;
+    .register-inner {
+      @include formInner;
+      position: relative;
+      .rocket {
+        position: absolute;
+        top: -12px;
+        left: -70px;
+      }
+      h2 {
+        font-size: 2rem;
+        font-weight: 900;
+      }
+      .register-form {
+        margin: 50px 0 0 0;
+        .input-field {
+          @include inputField;
+        }
+        .rememberme {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: left;
+          align-items: center;
+          font-size: 0.88rem;
+          input:checked ~ .reg-checkbox .cross-img {
+            background-color: $blueBtn;
+          }
+          label {
+            color: $gray;
+            cursor: pointer;
+            .cross-img {
+              display: inline-block;
+              width: 14px;
+              height: 14px;
+              line-height: 14px;
+              margin-right: 10px;
+              padding: 3px;
+              border: 1px solid #dedeea;
+              border-radius: 6px;
+              background-color: #fff;
+            }
+          }
+        }
+        .form-btn {
+          button {
+            @include formBtn;
+            background-color: $blueBtn;
+            &:hover {
+              background-color: $blueBtnHover;
+            }
+          }
+        }
+      }
+      .register-contact-us {
+        margin-top: 30px;
+        font-family: "Rajdhani-regular";
+        line-height: 1.3;
+        font-size: 0.88rem;
+        a {
+          font-family: "Rajdhani-bold";
+          color: #00c7d9;
+        }
+      }
+    }
+  }
+}
+
+.form-wrap {
+  @include formWrap;
+}
+
+.float-input:not(:placeholder-shown) + .float-label {
+  position: absolute !important;
+  top: 0px !important;
+  font-size: 13px;
+}
+
+// @media only screen and (max-width: 1365px) {
+//   #intro-text {
+//     display: none;
+//   }
+//   .rocket {
+//     @extend #intro-text;
+//   }
+//   .row {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+//   .login-box {
+//     transform: translateX(-50px);
+//     transition: none !important;
+//   }
+//   .register-box {
+//     transform: translateX(-50px);
+//     transition: none !important;
+//   }
+// }

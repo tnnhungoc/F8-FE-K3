@@ -1,0 +1,13 @@
+// import parts
+@import "parts/variables";
+@import "parts/fonts";
+@import "parts/reset";
+@import "parts/mixin";
+@import "parts/grid";
+@import "parts/responsive";
+
+// import pages
+@import "pages/home/background";
+@import "pages/home/loginbox";
+@import "pages/home/regesterbox";
+@import "pages/home/pageinfo";

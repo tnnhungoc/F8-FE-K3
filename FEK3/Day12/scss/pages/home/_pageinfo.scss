@@ -1,0 +1,78 @@
+.page-info {
+  width: 548px;
+  color: $white;
+  font-family: "Titillium-regular";
+  text-align: center;
+  margin-top: 8%;
+  margin-left: 8%;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 36px;
+  }
+  h1 {
+    font-size: 6.5rem;
+    font-family: "Titillium-black";
+    font-weight: 900;
+  }
+  p {
+    width: 384px;
+    margin: 30px auto 0;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    font-family: "Rajdhani-regular";
+  }
+}
+
+.switches-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-family: "Rajdhani-bold";
+  .login {
+    @include switch-btn;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    transition: all 0.3s ease;
+    &:focus {
+      @include selectedBtn;
+    }
+    &:active {
+      @include selectedBtn;
+    }
+  }
+
+  .register {
+    @include switch-btn;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all 0.3s ease;
+  }
+}
+
+#login:checked ~ .page-info .switches-btn label #login-switch {
+  @include selectedBtn;
+}
+#login:checked ~ .form .position .login-box {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+#register:checked ~ .page-info .switches-btn label #register-switch {
+  @include selectedBtn;
+}
+#register:checked ~ .form .position .register-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
