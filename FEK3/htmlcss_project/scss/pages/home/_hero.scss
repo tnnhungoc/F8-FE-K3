@@ -1,0 +1,54 @@
+.hero {
+  .title {
+    h2 {
+      @include h2;
+      padding-bottom: 15px;
+    }
+    h1 {
+      @include h1;
+      padding-bottom: 15px;
+    }
+  }
+
+  .hero-bg-wrap {
+    position: relative;
+  }
+
+  .hero-bg::before {
+    content: "";
+    background-color: $green200;
+    position: absolute;
+    width: 1500px;
+    right: -1000px;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    width: 776px;
+    height: 708px;
+    background-color: $green200;
+    border-radius: 16.667px 0px 0px 16.667px;
+    z-index: 1;
+    translate: 20%;
+    position: relative;
+    .hero-img {
+      width: 613.63px;
+      max-width: 100%;
+      position: relative;
+      top: 40px;
+      left: -160px;
+    }
+    .rotate-text {
+      font-size: 16.7rem;
+      font-weight: 600;
+      color: $green1000;
+      opacity: 0.15000000596046448;
+      line-height: 100%;
+      width: 676px;
+      transform: rotate(90deg);
+      translate: 28% -120%;
+    }
+  }
+}

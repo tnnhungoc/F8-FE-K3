@@ -16,6 +16,9 @@
 .justify-content-end {
   justify-content: flex-end;
 }
+.justify-content-spacebetween {
+  justify-content: space-between;
+}
 .align-items-start {
   align-items: flex-start;
 }
@@ -24,4 +27,95 @@
 }
 .align-items-start {
   align-items: flex-end;
+}
+.position-relative {
+  position: relative;
+}
+
+.sm-row {
+  width: 80%;
+}
+.row-gap {
+  margin: 200px 0;
+}
+
+.sm-dot-green {
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  background-color: $green200;
+}
+
+.big-dot-green {
+  width: 269.316px;
+  height: 269.316px;
+  border-radius: 50%;
+  background-color: $green300;
+}
+
+.sm-dot-orange {
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  background-color: $orange200;
+}
+.big-dot-orange {
+  width: 269.316px;
+  height: 269.316px;
+  border-radius: 50%;
+  background-color: $orange300;
+}
+
+.sm-rectangle {
+  width: 294px;
+  height: 338px;
+  border-radius: 3.333px;
+  box-shadow: -5.8333330154418945px 8.333333015441895px 72.5px 0px
+    rgba(54, 54, 54, 0.12);
+  background-color: $white;
+}
+.big-rectangle {
+  width: 343px;
+  height: 393px;
+  padding-top: 25px;
+  box-shadow: -5.8333330154418945px 8.333333015441895px 72.5px 0px
+    rgba(54, 54, 54, 0.12);
+  background-color: $white;
+}
+.quality-bg-green {
+  width: 83.3px;
+  height: 83.3px;
+  border-radius: 10px;
+  background-color: $green100;
+}
+.quality-bg-orange {
+  width: 83.3px;
+  height: 83.3px;
+  border-radius: 10px;
+  background-color: $orange100;
+}
+
+.price {
+  font-size: 2.33rem;
+  color: $black;
+}
+
+.deco-line {
+  max-width: 40.833px !important;
+  height: 2px;
+  background-color: $grey500;
+  margin: 0 auto 15px auto;
+}
+
+.grey-text {
+  color: $grey800;
+}
+
+.btn {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $white;
+  background-color: $primariColor;
+  padding: 13.3px 11.7px;
+  border-radius: 6.67px;
 }
