@@ -283,56 +283,45 @@ main {
     justify-content: center;
   }
 }
-.hero .title h2 {
+.hero .title h1 {
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 1.3;
   padding-bottom: 15px;
 }
-.hero .title h1 {
+.hero .title h2 {
   font-size: 4.3rem;
   font-weight: 700;
   line-height: normal;
   padding-bottom: 15px;
 }
-.hero .hero-bg-wrap {
-  position: relative;
-}
-.hero .hero-bg::before {
-  content: "";
-  background-color: #dcffca;
-  position: absolute;
-  width: 1500px;
-  right: -1000px;
-  height: 100%;
-  z-index: -2;
-  overflow: hidden;
+.hero .title p {
+  max-width: 90%;
 }
 .hero .hero-bg {
-  width: 776px;
-  height: 708px;
+  width: 50vw;
   background-color: #dcffca;
   border-radius: 16.667px 0px 0px 16.667px;
-  z-index: 1;
-  translate: 20%;
+  padding: 55px 0;
   position: relative;
+  min-height: 708px;
 }
 .hero .hero-bg .hero-img {
-  width: 613.63px;
-  max-width: 100%;
-  position: relative;
-  top: 40px;
-  left: -160px;
+  width: 60%;
+  margin-top: -5px;
+  margin-left: -140px;
 }
 .hero .hero-bg .rotate-text {
-  font-size: 16.7rem;
-  font-weight: 600;
+  font-size: 15.6rem;
+  font-weight: 800;
   color: #216000;
   opacity: 0.150000006;
-  line-height: 100%;
-  width: 676px;
+  line-height: 1;
+  width: 40%;
   transform: rotate(90deg);
-  translate: 28% -120%;
+  position: absolute;
+  left: 360px;
+  top: 120px;
 }
 
 .cards {
