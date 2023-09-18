@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Todos App</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .main {
+        width: 100%;
+        height: 100vh;
+        background-color: #8758ff;
+      }
+      .container {
+        background: #1a1a40;
+        width: 450px;
+        transform: translateY(100px);
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 5px;
+      }
+      .container h1 {
+        color: #fff;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .container .task-cover {
+        font-size: 0;
+      }
+      .container input {
+        display: inline-block;
+        background: none;
+        border: 1px solid #8758ff;
+        color: #fff;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        outline: none;
+        padding: 0.7rem 1rem;
+        width: 300px;
+      }
+      input::placeholder {
+        font-weight: 600;
+      }
+
+      .container button {
+        background: #8758ff;
+        color: #fff;
+        border: none;
+        padding: 0.75rem;
+        cursor: pointer;
+      }
+
+      .task {
+        width: 378px;
+        align-items: center;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 1rem;
+        padding: 0.75rem 1rem;
+        color: #fff;
+        background-color: #8758ff;
+      }
+      .editdel {
+        display: flex;
+        gap: 10px;
+
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <h1>Get Things Done !</h1>
+        <div class="task-cover">
+          <input
+            type="text"
+            id="input-task"
+            placeholder="What is the task today?"
+          />
+          <button id="add-btn">Add Task</button>
+        </div>
+        <div id="task-list"></div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
