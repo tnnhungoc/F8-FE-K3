@@ -1,0 +1,32 @@
+.scroll{
+    display: flex;
+    gap: 20px;
+}
+
+.scroll:hover #timehover {
+    display: block;
+}
+
+#slider{
+    flex-grow: 1;
+    background:gray;
+    height:25px;
+    display: block;
+}
+.slider_inner{
+    width:0;
+    background:red;
+    height:25px;
+}
+
+#pause{
+    display: none;
+}
+
+
+#timehover {
+    display: none;
+    background: #C8C8C8;
+    position: absolute;
+    z-index: 1000;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <audio src="music.mp3" preload="metadata" id="music"></audio>
+        <button id="play">play</button>
+        <button id="pause">pause</button>
+        
+        <div class="scroll">
+            <div id="timehover"></div>
+            <div id="time">0:0</div>
+            <div id="slider">
+                <div class="slider_inner" id="progress"></div>
+            </div>
+            <div id="total"></div>
+        </div>
+        
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
